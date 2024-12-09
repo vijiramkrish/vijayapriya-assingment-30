@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:3000/demo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./login form html css and media queries_files/___vscode_livepreview_injected_script"></script>
+    <style>
+        /* Bordered form*/
+        form{
+            border: 3px solid;
+        }
+
+        /* Full-width inputs*/
+        inputs[type=text], input[type=password]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid#ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons*/
+        button{
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Ass a hover effect for buttons*/
+        button:hover{
+            opacity: 0.8;
+        }
+
+        /*Extra style for the cancel button (red)*/
+        .cancelbtn{
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+    
+        }
+        /* Center the login form inside this container*/
+        .imgcontainer{
+            text-align: center;
+            margin: 24px 0 12px 0;
+
+        }
+
+        /* Lgoin Form*/
+        img.login form{
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        /* Add padding to containers*/
+        .container{
+            padding: 16px;
+        }
+
+        /* The "Forgot password" text*/
+        span.psw{
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Change styles for span and cancel button on extra small screens*/
+        @media screen and (max-width:450px){
+            span.pws {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+            
+        }
+    
+     
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login form html css and media queries_files/style css">
+    <title>login form html css and media queries</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+
+    <form action="http://127.0.0.1:3000/action_page.php" method="post">
+        <div class="imgcontanier">
+            <img src="./login form html css and media queries_files/OIP.2we-cJeib6_7-C258J65DwAAAA" alt="Login Form" class="Login Form">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required="">
+
+            <label for="psw"><b>password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" required="">
+
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="container" style="background-color: #f05908;">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="http://127.0.0.1:3000/demo.html#">password?</a></span>
+        </div>
+    </form>
+    
+
+
+        
+    
+
+
+
+</body></html>
