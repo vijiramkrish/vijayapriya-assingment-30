@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <style>
+*{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+}
+body{
+background: #080808;
+color: orangered;
+}
+#header{
+width: 100%;
+height: 100vh;
+background-image: url(https://plus.unsplash.com/premium_photo-1682089897177-4dbc85aa672f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwZ2lybHN8ZW58MHx8MHx8fDA%3D);
+background-size: cover;
+background-position: center;
+}
+.container{
+padding: 10px 10%;
+
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 10px 20px;
+
+}
+nav ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+}
+nav ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -6px;
+}
+nav ul li a:hover::after{
+width: 100%;
+
+
+
+}
+.header-text{
+margin-top:20% ;
+font-size: 30px;
+
+
+}
+.header-text h1{
+    margin-top:20px ;
+    font-size: 60px;
+color: black;
+}
+.header-text h1 span{
+color: red;
+
+}
+p{
+color: yellow;
+}
+/* --------------about----------- */
+#about{
+padding: 80px 0;
+color: #ababab;
+
+}
+.row{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.about-col-1 img{
+width:50%;
+border-radius: 15px;
+}
+.about-col-2{
+flex-basis: 60%;
+}
+.sub-title{
+font-size: 60px;
+font-weight:600;
+color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+width: 50%;
+
+}
+.tab-contents ul li{
+list-style: none;
+margin: 10px 0;
+}
+.tab-contents ul li span{
+color: #b54769;
+font-size: 14px;
+
+}
+.tab-contents{
+display: none;
+
+
+}
+.tab-contents.active-tab{
+display: block;
+}
+/* --------------services----------- */
+#services{
+padding: 30px 0;
+
+}
+.services-list{
+display: grid;  
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+/* --------------portfolio----------- */
+#portfolio{
+padding: 50px 0;
+
+}
+.work{
+border-radius: 100%;
+position: relative;
+
+}
+.work img{
+width: 100%;
+border-radius: 10px;
+display: block;
+}
+.layer{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+
+
+}
+/* --------------contact----------- */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 35%;
+}
+.contact-left p{
+margin-top: 30px;
+
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+width: 100%;
+border: 0;
+outline: none;
+background: aqua;
+padding: 15px;
+margin: 15px 0;
+color: black;
+font-size: 18px;
+border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div id="header">
+<div class="container">
+<nav>
+
+<ul>
+   <li><a href="#Home">Home</a></li> 
+   <li><a href="#About">About</a></li>
+   <li><a href="#Services">Services</a></li> 
+   <li><a href="#Portfolio">Portfolio</a></li>
+   <li><a href="#Contact">Contact</a></li>
+
+</ul>
+
+
+
+</nav>
+<div class="header-text">
+<p>UI/UX Designer </p>
+<h1>Hi, I'm <span>Viji</span> <br>  From India</h1>
+</div>
+</div>
+</div>
+<!-- ---------about--------- -->
+<div id="About">
+<div class="container">
+<div class="row">
+  <div class="about-col-1">
+    <img src="https://static.vecteezy.com/system/resources/previews/039/334/804/non_2x/ai-generated-indian-female-student-free-photo.jpg" alt="">
+  </div>
+<div class="about-col-2">
+    <h1 class="sub title">About Me</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed maxime vel aut magni quisquam non iure consequuntur consequatur quam fugiat, quia dignissimos natus aliquid temporibus reprehenderit totam voluptatum error deleniti!</p>
+
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('experience')">Experience </p>
+    <p class="tab-links" onclick="opentab('education')"> Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+<ul>
+    <li><span>UI?UX</span><Br>Designing Web/App interfaces</li>
+    <li><span>Web Development</span><Br> Web app Development </li>
+    <li><span>App Development</span><Br>Building Android/iOS apps</li>
+
+
+</ul>
+</div>
+<div class="tab-contents" id="experience">
+    <ul>
+        <li><span>2024 - current</span><Br>UI/UX Designing Training at ET Institute</li>
+        <li><span>2022 - 2024</span><Br> Team lead at StarApp LLC. </li>
+        <li><span>2020 - 2022</span><Br>UI/UX Design Exective at coin Digital Ltd.</li>
+        <li><span>2019 - 2020</span><Br> Internship at ekart eCommerce.</li>
+    
+    </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2019</span><Br>UI/UX Designing Training at ET Institute</li>
+            <li><span>2018</span><Br>MBA from MIT Bangalore</li>
+            <li><span>2017</span><Br>BBA from ISM Bangalore</li>
+        
+        
+        </ul>
+        </div>
+</div>
+
+</div>
+</div>
+</div>
+<!-- ---------services--------- -->
+<div id="Services">
+<div class="container">
+<h1 class="sub-title">My Services</h1>
+<div class="Services-list">
+<div>
+    <h2>Web Design</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum reprehenderit, repudiandae aliquam nulla suscipit maxime in asperiores ab? Totam vitae quas provident hic reprehenderit, quasi consectetur quidem fugit quisquam facere!</p>
+    <a href="#">learn more</a>
+</div>
+<div>
+    <h2>UI/UX Design</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum reprehenderit, repudiandae aliquam nulla suscipit maxime in asperiores ab? Totam vitae quas provident hic reprehenderit, quasi consectetur quidem fugit quisquam facere!</p>
+    <a href="#">learn more</a>
+</div>
+<div>
+    <h2>App Design</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum reprehenderit, repudiandae aliquam nulla suscipit maxime in asperiores ab? Totam vitae quas provident hic reprehenderit, quasi consectetur quidem fugit quisquam facere!</p>
+    <a href="#">learn more</a>
+</div>
+</div>
+</div>
+</div>
+<!-- ---------portfolio--------- -->
+<div id="Portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+<div class="work">
+    <img src="https://s39940.pcdn.co/wp-content/uploads/2024/09/iStock-1704413556-6.jpg" >
+<div class="layer">
+<h3>Social Media App</h3>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima voluptate et cupiditate non perferendis soluta nesciunt impedit, facere sunt exercitationem perspiciatis error est, dolorem aliquid? Quod ducimus ea quo!</p>
+</div>
+</div>
+<div class="work">
+    <img src="https://i.pcmag.com/imagery/roundups/05lFh69DK15xcYHSTZgr0zN-2..v1669943421.jpg">
+<div class="layer">
+    <h3>Music App</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos laborum molestias vitae pariatur adipisci totam eius. Repellendus totam enim libero eos adipisci? Ipsum veniam inventore eligendi ratione enim excepturi officia.</p>
+</div>
+</div>
+<div class="work">
+    <img src="https://images.ctfassets.net/vfkpgemp7ek3/3609789214/3b287ee3fba2e6a466cee34ee2c8c8ca/top-shopping-apps-ww-post-hero-image.png">
+<div class="layer">
+<h3>Online Shopping APP</h3>
+<P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates eaque nostrum assumenda quos, repudiandae doloribus molestiae illo hic explicabo dolorum dolor similique labore dolorem rem non molestias. Veniam, ipsum explicabo?</P>
+</div>
+</div>
+    </div>
+</div>
+
+</div>
+<!-- -----------contact------------ -->
+<div id="Contact">
+<div class="container">
+<div class="row">
+<div class="contact-left">
+    <h1 class="sub-title">Contact Me</h1>
+    <p>contact@example.com</p>
+    <p>0123456789</p>
+</div>
+<div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+</div>
+    
+</body>
+</html>
